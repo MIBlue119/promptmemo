@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PromptMemo</title>
+    <style>
+        /* Add some basic styles to improve the appearance of the popup */
+        body {
+          font-family: sans-serif;
+          font-size: 14px;
+          width: 300px;
+        }
+        input[type="text"] {
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 5px;
+          box-sizing: border-box;
+        }
+        button {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 5px;
+          box-sizing: border-box;
+        }
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        .prompt {
+          border: 1px solid #ddd;
+          padding: 10px;
+          margin-bottom: 5px;
+          background-color: #f9f9f9;
+          font-family: monospace;
+          white-space: pre-wrap;
+        }
+        .copy-button {
+            background-color: #d8efff;
+        }  
+        .delete-button {
+            background-color: #ffe6e6;
+        }
+          
+      </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>PromptMemo</h1>
+    <p>Enter a prompt and click "Save" to add it to your list.</p>
+    <input type="text" id="promptInput" placeholder="Enter a prompt">
+    <button id="saveButton">Save</button>
+    <button id="clearButton">Clear all prompts</button>
+    <ul id="promptList"></ul>
+  </body>
+</html>
